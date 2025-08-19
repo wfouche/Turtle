@@ -1914,8 +1914,7 @@ public class Turtle implements Runnable, ActionListener, MouseListener, MouseMot
             midscreen.drawImage(offscreenImage,0,0, null);
             Turtle animatedTurtle=null;
             double percent=1;
-            Long t2;
-            t2=new Long(0);
+            Long t2 = 0L;
             if (renderTime<turtleStates.lastKey())
             {
                 animatedTurtle=getStateTurtle(turtleStates.ceilingEntry(renderTime).getValue());
